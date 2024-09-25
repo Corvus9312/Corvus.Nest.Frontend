@@ -1,0 +1,98 @@
+@import 'app-default.scss';
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+main {
+    padding: 0 0.75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    div:first-child {
+        display: flex;
+        flex-wrap: wrap;
+
+        #content {
+            flex: 2 1 0;
+            padding: 1.5rem 1.5rem 0 3rem;
+        }
+
+        #sidebar {
+            flex: 1 1 0;
+            padding: 1.5rem 3rem 0 1.5rem;
+
+            section {
+                margin-top: 1rem;
+
+                #avatar {
+                    border-radius: 50%;
+                    vertical-align: middle;
+                }
+
+                p:first-of-type {
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    color: $black-color;
+                }
+
+                p {
+                    margin: 0.75rem 0;
+                    text-align: justify;
+                    color: $content-font-color;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                }
+
+                .social-media-container {
+                    position: relative;
+                    display: inline-flex;
+                    vertical-align: middle;
+
+                    a {
+                        display: inline-block;
+                        flex: 1 1 0;
+                        border: 1px solid $black-color;
+                        border-left: none;
+                        color: $black-color;
+                        text-align: center;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                        padding: .5rem .625rem;
+                        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+                        #media-img {
+                            width: 1.15rem;
+                        }
+                    }
+
+                    a:first-child {
+                        border-left: 1px solid;
+                        border-radius: .25rem 0 0 .25rem;
+                    }
+
+                    a:last-child {
+                        border-radius: 0 .25rem .25rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

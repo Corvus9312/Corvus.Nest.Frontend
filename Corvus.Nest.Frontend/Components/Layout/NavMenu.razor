@@ -1,0 +1,20 @@
+﻿@inherits NavMenuBase
+
+<nav>
+    <div>
+        <a id="logo-link" href="#">Corvus+</a>
+        <div id="navbarNav">
+            <ul id="navbar-menu">
+                @if (Menus is not null && !Menus.Count.Equals(0))
+                {
+                    @foreach (var menu in Menus)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href=@menu.Link target="@(menu.Link.StartsWith("http") ? "_blank" : "_self")">@menu.Title</a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

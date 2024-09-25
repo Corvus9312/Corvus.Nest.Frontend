@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-B-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-B-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-B.ttc" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-EL-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-EL-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-EL.ttc" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-H-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-H-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-H.ttc" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-L-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-L-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-L.ttc" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-M-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-M-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-M.ttc" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-R-JP.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-R-TW.ttf" />
+    <Content Remove="wwwroot\fonts\GenSenRounded\GenSenRounded-R.ttc" />
+    <Content Remove="wwwroot\fonts\Iansui-Regular.ttf" />
+    <Content Remove="wwwroot\fonts\jf-openhuninn-2.0.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-B-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-B-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-B.ttc" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-EL-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-EL-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-EL.ttc" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-H-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-H-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-H.ttc" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-L-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-L-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-L.ttc" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-M-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-M-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-M.ttc" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-R-JP.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-R-TW.ttf" />
+    <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-R.ttc" />
+    <None Include="wwwroot\fonts\Iansui-Regular.ttf" />
+    <None Include="wwwroot\fonts\jf-openhuninn-2.0.ttf" />
+    <None Include="wwwroot\sass\nav-menu.razor.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildWebCompiler2022" Version="1.14.10" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿@inherits MainLayoutBase
+
+<div class="page">
+    <NavMenu />
+    <main role="main">
+        <div>
+            <article id="content">
+                @Body
+            </article>
+            <article id="sidebar">
+                <section id="introduction">
+                    @if (About is not null)
+                    {
+                        <img id="avatar" src="images/@About.Avatar" width="125" alt="@About.Name" />
+                        <p>@About.Name</p>
+                        <p>@((MarkupString)About.Introduce)</p>
+                        <div class="social-media-container" role="group">
+                            @foreach (var social in About.SocialMedias)
+                            {
+                                <a href=@social.HyperLink target="@(social.HyperLink.StartsWith("http") ? "_blank" : "_self")">
+                                    <img id="media-img" src="images/@social.Icon" alt="@(social.Media)-icon">
+                                    @* <span>@social.Media</span> *@
+                                </a>
+                            }
+                        </div>
+                    }
+                </section>
+            </article>
+        </div>
+    </main>
+</div>
