@@ -1,0 +1,28 @@
+﻿@page "/"
+@page "/articles"
+@page "/category/{Category:guid}"
+@inherits ArticlesBase
+
+<PageTitle>Corvus+ Blog</PageTitle>
+
+<div class="article">
+    @if (GetCategory is not null)
+    {
+        <h1>@GetCategory.Title</h1>
+    }
+    <section>
+        @if (GetArticles is not null && GetArticles.Any())
+        {
+            @foreach (var article in GetArticles)
+            {
+                <article>
+                    <a href=@article.ArticleLink>
+                        <h2>@article.Title</h2>
+                        <p class="article-calendar">@article.CreateTime.ToString("yyyy-MM-dd HH:mm")</p>
+                        <p class="article-description">@article.Description</p>
+                    </a>
+                </article>
+            }
+        }
+    </section>
+</div>

@@ -1,0 +1,50 @@
+﻿#article {
+  /*flex: 1;*/
+}
+#article h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#article-footer {
+  display: flex;
+  width: 100%;
+  border-top: solid 1px #F2F2F2;
+  bottom: 0;
+  padding: 1rem 0 0 0;
+  height: 3rem;
+}
+#article-footer .beside-left {
+  justify-content: flex-start;
+}
+#article-footer .beside-right {
+  justify-content: flex-end;
+}
+#article-footer .footer-beside {
+  display: flex;
+  flex: 1 0 0;
+  /*i {
+      font-size: 28px;
+  }
+
+  i::before {
+      vertical-align: revert;
+  }*/
+}
+#article-footer .footer-beside img {
+  width: 32px;
+  height: 32px;
+}
+#article-footer .footer-beside p {
+  color: black;
+  margin: 0px;
+  text-decoration: none;
+}
+#article-footer .footer-center {
+  position: relative;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #f2f2f2;
+}

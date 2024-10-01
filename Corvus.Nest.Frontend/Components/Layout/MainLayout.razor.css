@@ -17,48 +17,65 @@
   top: 0.5rem;
 }
 
-main {
+.page {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.page main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   padding: 0 0.75rem;
   margin: 0 auto;
   box-sizing: border-box;
 }
-main div:first-child {
+.page main #content::before {
+  content: "";
+  min-height: 1.5rem;
+}
+.page main #sidebar::before {
+  content: "";
+  min-height: 1.5rem;
+}
+.page main #content {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column;
+  min-height: 100%;
+  flex: 3 1 0;
+  padding: 0 1.5rem 0 0;
 }
-main div:first-child #content {
-  flex: 2 1 0;
-  padding: 1.5rem 1.5rem 0 3rem;
-}
-main div:first-child #sidebar {
+.page main #sidebar {
+  display: flex;
+  flex-flow: column;
   flex: 1 1 0;
-  padding: 1.5rem 3rem 0 1.5rem;
+  padding: 0 3rem 0 1.5rem;
 }
-main div:first-child #sidebar section {
-  margin-top: 1rem;
+.page main #sidebar section {
+  padding-top: 1rem;
 }
-main div:first-child #sidebar section #avatar {
+.page main #sidebar section #avatar {
   border-radius: 50%;
   vertical-align: middle;
 }
-main div:first-child #sidebar section p:first-of-type {
+.page main #sidebar section p:first-of-type {
   font-size: 1.5rem;
   font-weight: bolder;
   color: rgb(0, 0, 0);
 }
-main div:first-child #sidebar section p {
+.page main #sidebar section p {
   margin: 0.75rem 0;
   text-align: justify;
   color: rgb(108, 117, 125);
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-main div:first-child #sidebar section .social-media-container {
+.page main #sidebar section .social-media-container {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
 }
-main div:first-child #sidebar section .social-media-container a {
+.page main #sidebar section .social-media-container a {
   display: inline-block;
   flex: 1 1 0;
   border: 1px solid rgb(0, 0, 0);
@@ -72,13 +89,13 @@ main div:first-child #sidebar section .social-media-container a {
   padding: 0.5rem 0.625rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-main div:first-child #sidebar section .social-media-container a #media-img {
+.page main #sidebar section .social-media-container a #media-img {
   width: 1.15rem;
 }
-main div:first-child #sidebar section .social-media-container a:first-child {
+.page main #sidebar section .social-media-container a:first-child {
   border-left: 1px solid;
   border-radius: 0.25rem 0 0 0.25rem;
 }
-main div:first-child #sidebar section .social-media-container a:last-child {
+.page main #sidebar section .social-media-container a:last-child {
   border-radius: 0 0.25rem 0.25rem 0;
 }

@@ -1,0 +1,43 @@
+﻿@page "/articles/{ArticleID:guid}"
+@inherits ArticlePageBase
+
+<PageTitle>Corvus9312 - @($"{Article?.Title}")</PageTitle>
+
+@if (Article is not null)
+{
+    <article id="article">
+        <h1>@Article.Title</h1>
+        @((MarkupString)Article.ArticleContent)
+    </article>
+}
+
+<div id="article-footer">
+    <div class="footer-beside beside-left">
+        @if (PreviousArticle is not null)
+        {
+            <a href="@PreviousArticle.ArticleLink">
+                <div style="display: inline-block">
+                    <img class="caret-icon" src="images/caret-left.svg" alt="previous btn icon">
+                </div>
+                <div style="display: inline-block">
+                    <p>上一篇</p>
+                    @PreviousArticle.Title
+                </div>
+            </a>
+        }
+    </div>
+    <div class="footer-beside beside-right">
+        @if (NextArticle is not null)
+        {
+            <a href="@NextArticle.ArticleLink">
+                <div style="display: inline-block">
+                    <p>下一篇</p>
+                    @NextArticle.Title
+                </div>
+                <div style="display: inline-block">
+                    <img class="caret-icon" src="images/caret-right.svg" alt="next btn icon">
+                </div>
+            </a>
+        }
+    </div>
+</div>
