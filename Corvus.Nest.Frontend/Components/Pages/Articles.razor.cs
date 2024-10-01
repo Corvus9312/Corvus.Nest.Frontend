@@ -7,7 +7,7 @@ namespace Corvus.Nest.Frontend.Components.Pages;
 
 public class ArticlesBase : CusComponentBase
 {
-    public List<GetArticlesVM>? GetArticles { get; set; }
+    public IEnumerable<GetArticlesVM>? GetArticles { get; set; }
 
     [Parameter] public Guid? Category { get; set; } = null;
 
@@ -28,8 +28,10 @@ public class ArticlesBase : CusComponentBase
         }
 
         var url = builder.ToString();
-
+        
         GetArticles = await HttpClient.GetAsync<List<GetArticlesVM>>(url);
+
+        GetArticles = Category is null ? GetArticles?.OrderBy(x => x.CreateTime) : GetArticles?.OrderBy(x => x.Sort);
 
         GetCategory = GetArticles?.FirstOrDefault(x => x.ID.Equals(Category))?.CategoryNavigation;
 
