@@ -5,10 +5,18 @@
   },
   {
     "outputFile": "Components/Layout/NavMenu.razor.css",
-    "inputFile": "wwwroot/sass/nav-menu.razor.scss"
+    "inputFile": "Components/Layout/NavMenu.razor.scss"
   },
   {
     "outputFile": "Components/Layout/MainLayout.razor.css",
-    "inputFile": "wwwroot/sass/main-layout.razor.scss"
+    "inputFile": "Components/Layout/MainLayout.razor.scss"
+  },
+  {
+    "outputFile": "Components/Pages/Articles.razor.css",
+    "inputFile": "Components/Pages/Articles.razor.scss"
+  },
+  {
+    "outputFile": "Components/Pages/ArticlePage.razor.css",
+    "inputFile": "Components/Pages/ArticlePage.razor.scss"
   }
 ]

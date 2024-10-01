@@ -31,6 +31,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Components\Layout\MainLayout.razor.scss" />
+    <Content Include="Components\Layout\NavMenu.razor.scss" />
+    <Content Include="Components\Pages\Articles.razor.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="compilerconfig.json" />
     <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-B-JP.ttf" />
     <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-B-TW.ttf" />
@@ -52,7 +58,6 @@
     <None Include="wwwroot\fonts\GenSenRounded\GenSenRounded-R.ttc" />
     <None Include="wwwroot\fonts\Iansui-Regular.ttf" />
     <None Include="wwwroot\fonts\jf-openhuninn-2.0.ttf" />
-    <None Include="wwwroot\sass\nav-menu.razor.scss" />
   </ItemGroup>
 
   <ItemGroup>

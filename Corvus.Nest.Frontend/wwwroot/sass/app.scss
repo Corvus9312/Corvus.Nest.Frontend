@@ -1,8 +1,15 @@
-@import url('../css/font.css');
+@import '../css/font.css';
+@import 'app-default.scss';
 
-html, body {
+html {
     box-sizing: border-box;
     font-family: "GenSenRounded-M", "微軟正黑體", sans-serif;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
 }
 
 @media (min-width: 576px) {
