@@ -36,3 +36,26 @@ body {
     width: 1320px;
   }
 }
+table, th, td {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid rgba(222, 226, 230, 0.8);
+  border-collapse: collapse;
+  vertical-align: top;
+  text-align: center;
+  width: max-content;
+}
+
+.code-block {
+  max-width: 100%;
+  text-indent: 0;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  font-size: 12px;
+  max-width: 100%;
+}
+
+.code-block pre code {
+  max-width: 100%;
+}

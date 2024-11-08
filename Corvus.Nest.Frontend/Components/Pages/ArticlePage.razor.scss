@@ -1,10 +1,14 @@
 #article {
-    /*flex: 1;*/
+    padding-bottom: 1rem;
 
     h1 {
         font-size: 2.5rem;
         font-weight: bolder;
         text-align: center;
+    }
+
+    div {
+        max-width: 100%;
     }
 }
 
@@ -15,7 +19,7 @@
     bottom: 0;
     padding: 1rem 0 0 0;
     height: 3rem;
-    
+
 
     .beside-left {
         justify-content: flex-start;
@@ -39,13 +43,6 @@
             margin: 0px;
             text-decoration: none;
         }
-        /*i {
-            font-size: 28px;
-        }
-
-        i::before {
-            vertical-align: revert;
-        }*/
     }
 
     .footer-center {
@@ -54,5 +51,20 @@
         width: 1px;
         height: calc(100% - 10px);
         background-color: #f2f2f2
+    }
+}
+
+.code-block {
+    max-width: 760px;
+    text-indent: 0;
+    overflow-x: auto;
+
+    pre {
+        font-size: 12px;
+        max-width: 100%;
+
+        code {
+            max-width: 100%;
+        }
     }
 }

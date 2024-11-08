@@ -18,5 +18,9 @@
   {
     "outputFile": "Components/Pages/ArticlePage.razor.css",
     "inputFile": "Components/Pages/ArticlePage.razor.scss"
+  },
+  {
+    "outputFile": "Components/Pages/CategoryPage.razor.css",
+    "inputFile": "Components/Pages/CategoryPage.razor.scss"
   }
 ]

@@ -42,14 +42,16 @@
   display: flex;
   flex-flow: column;
   min-height: 100%;
-  flex: 3 1 0;
+  flex: 3 0 0;
   padding: 0 1.5rem 0 0;
+  width: 75%;
 }
 .page main #sidebar {
   display: flex;
   flex-flow: column;
-  flex: 1 1 0;
-  padding: 0 3rem 0 1.5rem;
+  flex: 1 0 0;
+  padding: 0 1rem 0 0.5rem;
+  width: 25%;
 }
 .page main #sidebar section {
   padding-top: 1rem;

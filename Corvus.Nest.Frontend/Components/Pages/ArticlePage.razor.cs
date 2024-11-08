@@ -30,6 +30,11 @@ public class ArticlePageBase : CusComponentBase
         await SetPageParameters();
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeVoidAsync("Prism.highlightAll");
+    }
+
     private async Task<Article?> GetArticle()
     {
         UriBuilder builder = new(Path.Combine(BackendApi, "GetArticle"));

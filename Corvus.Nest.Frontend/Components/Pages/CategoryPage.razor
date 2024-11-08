@@ -1,0 +1,22 @@
+﻿@page "/category"
+@inherits CategoryPageBase
+
+
+<PageTitle>Corvus+ category</PageTitle>
+
+<div class="article">
+
+    <section>
+        @if (Categories is not null && !Categories.Count.Equals(0))
+        {
+            @foreach (var category in Categories)
+            {
+                <article>
+                    <a href="@($"/category/{category.ID}")">
+                        <h2>@category.Title</h2>
+                    </a>
+                </article>
+            }
+        }
+    </section>
+</div>

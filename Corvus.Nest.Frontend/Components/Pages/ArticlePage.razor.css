@@ -1,10 +1,13 @@
 ﻿#article {
-  /*flex: 1;*/
+  padding-bottom: 1rem;
 }
 #article h1 {
   font-size: 2.5rem;
   font-weight: bolder;
   text-align: center;
+}
+#article div {
+  max-width: 100%;
 }
 
 #article-footer {
@@ -24,13 +27,6 @@
 #article-footer .footer-beside {
   display: flex;
   flex: 1 0 0;
-  /*i {
-      font-size: 28px;
-  }
-
-  i::before {
-      vertical-align: revert;
-  }*/
 }
 #article-footer .footer-beside img {
   width: 32px;

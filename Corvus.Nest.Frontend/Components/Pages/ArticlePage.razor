@@ -7,7 +7,7 @@
 {
     <article id="article">
         <h1>@Article.Title</h1>
-        @((MarkupString)Article.ArticleContent)
+        @((MarkupString)Article.ArticleContent.Replace("{{{BackendApi}}}", BackendApi))
     </article>
 }
 
